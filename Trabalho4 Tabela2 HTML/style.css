@@ -9,6 +9,7 @@ th{
     background-color: #7ba388;
     padding: 10px;
     font-size: large;
+    color: rgb(14, 7, 39);
 }
 td{
     border: 2px solid black;
@@ -20,11 +21,13 @@ caption{
     font-weight: bold;
     font-size: 28px;
     margin-bottom: 15px;
+    color: #1f1f1f;
 }
 .hora{
     font-weight: bold;
     background-color: rgba(181, 177, 177, 0.842);
     font-size: large;
+    color: rgb(74, 1, 1);
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
