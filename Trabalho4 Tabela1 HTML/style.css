@@ -1,0 +1,35 @@
+table{
+    width: 100%;
+    margin: 3px;
+    border-collapse:collapse;
+}
+
+th{
+    border: 2px solid black;
+    background-color: rgb(182, 175, 175);
+} 
+td{
+    border: 2px solid black;
+    background-color: white;
+    text-align: center;
+}
+.materias div{
+margin-bottom: 50px;
+}
+.ensw{
+    background-color: rgb(255, 98, 0);
+    color: white;
+}
+.intervalo{
+    background-color:rgb(182, 175, 175) ;
+}
+.flex{
+    background-color: rgb(255, 128, 0);
+    color: white;
+    font-weight: bold;
+}
+caption{
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
