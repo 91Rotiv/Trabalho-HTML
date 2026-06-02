@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="brasaoEB.jpg" type="img/x-icon">
     <title>Formulário de Cadastro</title>
 
     <style>
 
         body{
             font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
+            background-color: #515604;
             margin: 0;
             padding: 20px;
         }
@@ -17,10 +18,10 @@
         form{
             max-width: 500px;
             margin: auto;
-            background-color: white;
+            background-color: rgb(121, 119, 119);
             padding: 20px;
             border-radius: 10px;
-            border: 1px solid #ccc;
+            border: 1px solid #000000;
         }
 
         fieldset{
@@ -49,7 +50,7 @@
         textarea{
             width: 100%;
             padding: 8px;
-            border: 1px solid #ccc;
+            border: 1px solid #000000;
             border-radius: 6px;
             box-sizing: border-box;
         }
@@ -57,7 +58,7 @@
         input:focus,
         select:focus,
         textarea:focus{
-            border-color: #4a90e2;
+            border-color: #1d7d0a;
             outline: none;
         }
 
@@ -73,7 +74,7 @@
         button{
             margin-top: 20px;
             padding: 10px 20px;
-            background-color: #4a90e2;
+            background-color: #155f06;
             color: white;
             border: none;
             border-radius: 6px;
@@ -81,7 +82,43 @@
         }
 
         button:hover{
-            background-color: #357abd;
+            background-color: #1d800a;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"]{
+            background-color: #868f094c;
+        }
+
+        option{
+            background-color: #868f094c;
+        }
+
+        select{
+            background-color: #868f094c;
+        }
+
+        textarea{
+            background-color: #868f094c;
+        }
+
+        input[type="radio"]{
+            accent-color: #155f06;
+        }
+
+        input[type="file"]::file-selector-button{
+            background-color: #155f06;
+            color: white;
+            border: 1px solid rgb(255, 255, 255);
+            border-radius: 6px;
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+
+        input[type="file"]::file-selector-button:hover{
+            background-color: #1c7e08;
         }
 
     </style>
@@ -107,12 +144,12 @@
             <label for="nascimento">Data de nascimento</label>
             <input type="date" id="nascimento" name="nascimento">
 
-            <label for="curso">Curso</label>
+            <label for="curso">Concurso a Ser Prestado</label>
             <select id="curso" name="curso">
                 <option value="">Selecione</option>
-                <option>ADS</option>
-                <option>Engenharia de Software</option>
-                <option>Ciência de Dados</option>
+                <option>ESA (Escola de Sargento das Armas)</option>
+                <option>EsPCEx (Escola Preparatória de Cadetes do Exército)</option>
+                <option>IME (Instituto Militar de Engenharia)</option>
             </select>
 
             <label>Sexo</label>
@@ -131,7 +168,7 @@
             <label for="comentarios">Comentários</label>
             <textarea id="comentarios" name="comentarios" rows="4"></textarea>
 
-            <label for="foto">Upload de foto</label>
+            <label for="foto">Upload de Documentos (CPF, Alistamento Militar Obrigatório e Comprovante de Vacina)</label>
             <input type="file" id="foto" name="foto">
 
             <button type="submit">Cadastrar</button>
