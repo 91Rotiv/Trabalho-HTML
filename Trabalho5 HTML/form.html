@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+
+    <style>
+
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        form{
+            max-width: 500px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+        }
+
+        fieldset{
+            border: none;
+            padding: 0;
+        }
+
+        legend{
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        label{
+            display: block;
+            margin-top: 12px;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        input[type="file"],
+        select,
+        textarea{
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus{
+            border-color: #4a90e2;
+            outline: none;
+        }
+
+        .sexo{
+            margin-top: 5px;
+        }
+
+        .sexo label{
+            display: inline;
+            margin-right: 15px;
+        }
+
+        button{
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: #357abd;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <form>
+
+        <fieldset>
+
+            <legend>Preencha para efetuar o cadastro</legend>
+
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" required>
+
+            <label for="nascimento">Data de nascimento</label>
+            <input type="date" id="nascimento" name="nascimento">
+
+            <label for="curso">Curso</label>
+            <select id="curso" name="curso">
+                <option value="">Selecione</option>
+                <option>ADS</option>
+                <option>Engenharia de Software</option>
+                <option>Ciência de Dados</option>
+            </select>
+
+            <label>Sexo</label>
+
+            <div class="sexo">
+                <input type="radio" id="masculino" name="sexo" value="Masculino">
+                <label for="masculino">Masculino</label>
+
+                <input type="radio" id="feminino" name="sexo" value="Feminino">
+                <label for="feminino">Feminino</label>
+            </div>
+
+            <label for="interesses">Interesses</label>
+            <input type="text" id="interesses" name="interesses">
+
+            <label for="comentarios">Comentários</label>
+            <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+
+            <label for="foto">Upload de foto</label>
+            <input type="file" id="foto" name="foto">
+
+            <button type="submit">Cadastrar</button>
+
+        </fieldset>
+
+    </form>
+
+</body>
+</html>
